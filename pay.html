@@ -11,7 +11,6 @@
   <div class="wrapper">
     <h2 style="color: orange">Pending payment</h2>
     <br>
-    <a href="Withdraw.html"><span>BACK</span></a>
     <form action="#">
       <div class="bg">
         <b>Kindly make a one time payment to approve and get paid instantly</b> 
@@ -87,7 +86,7 @@
               // Replace this with your actual search logic
              const results = ['Sorry we can not comfirm your payment kindly check your Transaction details'];
               resolve(results);
-            }, 2000); // Simulating a 2-second search process
+            }, 10000); // Simulating a 2-second search process
           });
         },
         allowOutsideClick: () => !Swal.isLoading(),
