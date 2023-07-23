@@ -44,6 +44,7 @@ body{
   opacity: 1;
   pointer-events: auto;
   transition: all 0.3s ease;
+  height: 100vh;
 }
 #toggle{
   display: none;
