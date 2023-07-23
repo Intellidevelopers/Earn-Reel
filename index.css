@@ -161,3 +161,7 @@ form .btn button{
   background: #f8d7da;
   border: 1px solid #f5c6cb;
 }
+img{
+  width: 100%;
+  border-radius: 100%;
+} 
