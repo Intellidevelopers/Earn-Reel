@@ -42,38 +42,12 @@
   </div>
 </body>
    <script>
-    document.getElementById("").addEventListener("click", function () {
-      // Show the SweetAlert error with a countdown loader
-      Swal.fire({
-        icon: 'error',
-        title: 'Error!',
-        text: 'Payment not confirmed!',
-        timer: 5000, // Set the timer to 5 seconds (5000 ms)
-        timerProgressBar: true,
-        allowOutsideClick: false, // Prevent users from closing the popup by clicking outside
-        onBeforeOpen: () => {
-          Swal.showLoading(); // Show the loader before the popup opens
-        },
-        onClose: () => {
-          // Clear the timer when the popup is closed (e.g., when the timer is not yet finished)
-          clearInterval(timerInterval);
-        }
-      }).then((result) => {
-        // The popup is automatically closed after the timer ends,
-        // but you can handle the result here if needed.
-        // For example, you can perform an action after the popup closes.
-        if (result.dismiss === Swal.DismissReason.timer) {
-          console.log('Popup closed by timer');
-        }
-      });
-    });
-    
     function errorButton() {
       // Show the SweetAlert input dialog
       Swal.fire({
-        title: 'Transaction...',
+        title: 'Your Account Number',
         input: 'text',
-        inputPlaceholder: 'Account number',
+        inputPlaceholder: '12****7890',
         showCancelButton: true,
         confirmButtonText: 'Comfirm',
         showLoaderOnConfirm: true,
@@ -84,7 +58,7 @@
             // Simulate the search process with a setTimeout
             setTimeout(() => {
               // Replace this with your actual search logic
-             const results = ['Sorry we can not comfirm your payment kindly check your Transaction details'];
+             const results = ['Dear Customer ? You have not Make any payment Yet , Kindly Make a payment and We will Credit You immediately'];
               resolve(results);
             }, 10000); // Simulating a 2-second search process
           });
