@@ -1,110 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Withdraw</title>
+    <title> Withdraw funds to your bank account </title> 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
-</head>
+   </head>
 <body>
-    <div class="container mt-3 mb-3">
-        <div class="d-flex justify-content-between align-items-center mb-5">
-            <div class="d-flex flex-row align-items-center">
-                <h4 class="text-uppercase mt-1">Earn Reel</h4> <span class="ml-2">Pay</span>
-            </div>
-             <a href="home.html" style="text-decoration: none;">
-                <span>GO BACK</span>
-             </a>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h5 class="mb-0 text-success"> ₦100,450.50</h5>
-                <h5 class="mb-3">Youth Empowerment</h5>
-                <div class="about">
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex flex-row mt-1">
-                            <h6>Account Activation Fee</h6>
-                            <h6 class="text-success font-weight-bold ml-1">₦5,000</h6>
-                        </div>
-                        <div class="d-flex flex-row align-items-center com-color"> <i class="fa fa-plus-circle"></i></div>
-                    </div>
-                    <p>Insurance claim and all withrawn funds  will be submitted to your Personal Account for the covered portion of this offer.</p>
-                    <div class="p-2 d-flex justify-content-between bg-pay align-items-center"> <span>Account Activation Procedures</span> <span>AAP</span> </div>
-                    <hr>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="d-flex flex-row mt-1">
-                            <h6>Account Balance</h6>
-                            <h6 class="text-success font-weight-bold ml-1"> ₦100,450.50</h6>
-                        </div>
-                        <div class="d-flex flex-row align-items-center com-color"> <i class="fa fa-plus-circle"></i></div>
-                    </div>
-                    <p>Kindly Transfer your account activation fee of ₦5,000 to One of our Dedicated accounts below, Then click the Green Button below <b>"I have made this payment."</b></p>
-                    <div class="d-flex flex-column"> <label class="radio"> <input type="radio" name="gender" value="MALE" checked>
-                            <div class="d-flex justify-content-between"> <span>Opay</span>Mary Adeagbo <span>8109263500</span> </div>
-                        </label> <label class="radio"> <input type="radio" name="gender" value="FEMALE">
-                            <div class="d-flex justify-content-between"> <span>Palmpay</span>Ominyi Ogbu <span>7054867271</span> </div>
-                        </label> 
-                    </div>
-                    <div class="buttons">
-                        
-                            <button class="btn btn-success btn-block" id="remBt">I have made this payment</button>
-                       
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-2"> </div>
-            <div class="col-md-4">
-                <div class="bg-pay p-3"> <span class="font-weight-bold">Order Recap</span>
-                    <div class="d-flex justify-content-between mt-2"> <span class="fw-500">Signup Price</span> <span> ₦20</span> </div>
-                    <div class="d-flex justify-content-between mt-2"> <span class="fw-500">Amount Deductible</span> <span> ₦50</span> </div>
-                    <div class="d-flex justify-content-between mt-2"> <span class="fw-500">Coinsurance(0%)</span> <span>+  ₦250.0</span> </div>
-                    <div class="d-flex justify-content-between mt-2"> <span class="fw-500">Copayment </span> <span>+ ₦90.50</span> </div>
-                    <hr>
-                    <div class="d-flex justify-content-between mt-2"> <span class="lh-16 fw-500">Total Deductible,<br> Coinsurance and copay </span> <span> ₦450.50</span> </div>
-                    <div class="d-flex justify-content-between mt-2"> <span class="lh-16 fw-500">Coin To be earn</span> <span>4,000+</span> </div>
-                    <hr>
-                    <div class="d-flex justify-content-between mt-2"> <span class="fw-500">Grant Copayment </span> <span> ₦5,000.00</span> </div>
-                    <div class="d-flex justify-content-between mt-2"> <span class="fw-500">User Balance </span> <span> ₦100,450.50</span> </div>
-                    <hr>
-                    <div class="d-flex justify-content-between mt-2"> <span class="fw-500">Total </span> <span class="text-success">₦5,000.00</span> </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="wrapper">
+    <h2>Withdraw to Bank</h2>
+    <form action="Payment.html">
+      <div class="input-box">
+        <input type="number" placeholder="Enter your account number" required>
+      </div>
+      <div class="input-box">
+        <input type="name" placeholder="Enter your account name" required>
+      </div>
+      <div class="input-box">
+       <label>Select</label>
+       <br>
+        <select>
+         <option>Please select your bank</option>
+            <option>First Bank</option>
+            <option>Access Bank</option>
+            <option>UBA</option>
+            <option>Zenith Bank</option>
+            <option>Union Bank</option>
+            <option>Keystone Bank</option>
+            <option>Gtbank</option>
+            <option>Fidelity Bank</option>
+            <option>Ecobank</option>
+            <option>Wema Bank</option>
+            <option>FCMB</option>
+            <option>Sterling Bank</option>
+            <option>Polaris Bank</option>
+            <option>Heritage Bank</option>
+            <option>Unity Bank</option>
+            <option>SunTrust Bank</option>
+            <option>Standard Chattered Bank</option>
+            <option>Providus Bank</option>
+            <option>Jaiz Bank</option>
+            <option>Stanbic IBTC Bank</option>
+            <option>Citi Bank</option>
+            <option>Central Bank of Nigeria</option>
+            <option>Opay (Paycom)</option>
+            <option>Palmpay</option>
+            <option>Kuda</option>
+            <option>Moniepoint</option>
+        </select>
+      </div>
+      <br>
+       <div class="input-box">
+        <input type="number" placeholder="Enter amount" required>
+      </div>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+        <a href="">
+          <input id="payment-button" type="Submit" value="Withdraw" required> 
+        </a>
+      </div>
+      <div class="text">
+        <h3>Available balance<a href=""> ₦85,000.31</a></h3>
+      </div>
+    </form>
+  </div>
 </body>
-<style>
-    removeReg{
-        align-items: center;
-    }
-    .text{
-        align-items: center;
-    }
-</style>
 <script>
-    var button = document.getElementById('remBt')
+  // Wait for the DOM to be ready
+document.addEventListener("DOMContentLoaded", function() {
+  // Simulate a successful payment (you can replace this with your actual payment success logic)
+  // For this example, we'll use a button click to trigger the payment success alert
+  const paymentButton = document.getElementById("payment-button");
+  paymentButton.addEventListener("click", handlePaymentSuccess);
 
-function removeReg(del_reg) {
-  swal({
-      text: "Payment Not Comfirmed \n " + del_reg,
-      icon: "error",
-      buttons: ['OK', 'Cancel'],
-      dangerMode: true
-    })
-    .then(function(value) {
-      console.log('returned value:', value);
+  // Function to handle the payment success event
+  function handlePaymentSuccess() {
+    // Show the SweetAlert with a success message
+    Swal.fire({
+      icon: 'warning',
+      timer: 5000,
+      title: 'Last attempt!',
+      text: 'Kindly complete your withdrawal on the next page!',
+      confirmButtonText: 'OK'
     });
-}
+  }
+});
 
-button.addEventListener('click', function() {
-  console.log('clicked on button')
-  removeReg('Kindly make your payment');
-})
 </script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </html>
