@@ -131,3 +131,13 @@ h4{
   height: 50px;
   border-radius: 3px;
 }
+a{
+  text-decoration: none;
+} 
+span{
+  font-weight: 600;
+  text-decoration: none;
+  color: blue;
+  font-style: bold;
+  
+} 
