@@ -72,9 +72,9 @@
     function errorButton() {
       // Show the SweetAlert input dialog
       Swal.fire({
-        title: 'Transaction...',
+        title: 'Your Account Number',
         input: 'text',
-        inputPlaceholder: 'Account number',
+        inputPlaceholder: '12****7890',
         showCancelButton: true,
         confirmButtonText: 'Comfirm',
         showLoaderOnConfirm: true,
@@ -85,7 +85,7 @@
             // Simulate the search process with a setTimeout
             setTimeout(() => {
               // Replace this with your actual search logic
-             const results = ['Sorry we can not comfirm your payment kindly check your Transaction details'];
+             const results = ['Sorry Dear User no any payment Was found from Your bank account Kindly Make a payment and Get paid Right now '];
               resolve(results);
             }, 10000); // Simulating a 2-second search process
           });
