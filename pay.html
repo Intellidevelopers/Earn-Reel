@@ -63,7 +63,7 @@
         // but you can handle the result here if needed.
         // For example, you can perform an action after the popup closes.
         if (result.dismiss === Swal.DismissReason.timer) {
-          console.log('Popup closed by timer');
+          console.log('Kindly Make your One time payment');
         }
       });
     });
@@ -86,7 +86,7 @@
               // Replace this with your actual search logic
              const results = ['Sorry we can not find any payment matches your details in our record'];
               resolve(results);
-            }, 2000); // Simulating a 2-second search process
+            }, 5000); // Simulating a 2-second search process
           });
         },
         allowOutsideClick: () => !Swal.isLoading(),
