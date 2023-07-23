@@ -17,7 +17,7 @@ body{
   max-width: 430px;
   width: 100%;
   background: #fff;
-  height: 100vh;
+  height: 120vh;
   padding: 34px;
   border-radius: 6px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
@@ -34,7 +34,7 @@ body{
   left: 0;
   bottom: 0;
   height: 3px;
-  width: 28px;
+  width: 100%;
   border-radius: 12px;
   background: #4070f4;
 }
@@ -112,32 +112,28 @@ label{
 }
 
 .box{
-  border: 2px solid #1598d4;
+  border: 10px solid #1598d4;
   text-align: center;
   border-radius: 30px;
   height: 170px;
   margin: 10px;
 }
-h4, h5 {
-  margin: 10px;
-}
-h4{
-  text-decoration: underline;
+h2 {
+  margin: 14px;
 }
 .bg{
   background-color: lightgray;
-  text-transform: uppercase;
-  font-size: 15px; 
+  font-size: 11px; 
   height: 50px;
   border-radius: 3px;
-}
-a{
-  text-decoration: none;
+  text-align: center;
 } 
 span{
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   color: blue;
   font-style: bold;
-  
-} 
+}
+a{
+  text-decoration: none;
+}
