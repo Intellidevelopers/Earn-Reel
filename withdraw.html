@@ -59,7 +59,7 @@
         <h3>I accept all terms & condition</h3>
       </div>
       <div class="input-box button">
-        <a href="payment.html">
+        <a href="Payment.html">
           <input type="Submit" value="Withdraw" required> 
         </a>
       </div>
@@ -69,28 +69,6 @@
     </form>
   </div>
 </body>
-<script>
-  // Wait for the DOM to be ready
-document.addEventListener("DOMContentLoaded", function() {
-  // Simulate a successful payment (you can replace this with your actual payment success logic)
-  // For this example, we'll use a button click to trigger the payment success alert
-  const paymentButton = document.getElementById("payment-button");
-  paymentButton.addEventListener("click", handlePaymentSuccess);
-
-  // Function to handle the payment success event
-  function handlePaymentSuccess() {
-    // Show the SweetAlert with a success message
-    Swal.fire({
-      icon: 'warning',
-      timer: 5000,
-      title: 'Last attempt!',
-      text: 'Kindly complete your withdrawal on the next page!',
-      confirmButtonText: 'OK'
-    });
-  }
-});
-
-</script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
