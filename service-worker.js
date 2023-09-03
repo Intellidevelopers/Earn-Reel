@@ -2,15 +2,15 @@
 const cacheName = 'offline-app-v1';
 const cacheFiles = [
     '/',
-    '/index.html',
-    '/app.js',
-    '/withdraw.html',
-    '/home.html',
-    '/bonus.html',
-    '/pay.html',
-    '/index.css',
-    '/style.css',
-    '/logo (1).png',
+    'index.html',
+    'app.js',
+    'withdraw.html',
+    'home.html',
+    'bonus.html',
+    'pay.html',
+    'index.css',
+    'style.css',
+    'logo (1).png',
     '/assets'
 
 ];
