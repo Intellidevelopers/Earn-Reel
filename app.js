@@ -16,15 +16,6 @@ if ('serviceWorker' in navigator) {
         .then(function(cache) {
           return cache.addAll([
             '/',
-            'index.html',
-            'style.css',
-            'app.js',
-            'logo (1).png',
-            'bonus.html',
-            'home.css',
-            'withdraw.html',
-            'pay.html',
-            'index.css'
             // Add more files and assets to cache as needed
           ]);
         })
