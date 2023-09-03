@@ -938,45 +938,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script>
-      // Register the service worker
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('service-worker.js')
-          .then(function(registration) {
-            console.log('Service Worker registered with scope:', registration.scope);
-          })
-          .catch(function(error) {
-            console.error('Service Worker registration failed:', error);
-          });
-      }
-      
-      // Add event listener for the 'install' event
-      self.addEventListener('install', function(event) {
-        event.waitUntil(
-          caches.open('app-cache-v1')
-            .then(function(cache) {
-              return cache.addAll([
-                '/',
-                // Add more files and assets to cache as needed
-              ]);
-            })
-        );
+  if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(function(registration) {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(function(error) {
+        console.log('Service Worker registration failed:', error);
       });
-      
-      // Add event listener for the 'fetch' event
-      self.addEventListener('fetch', function(event) {
-        event.respondWith(
-          caches.match(event.request)
-            .then(function(response) {
-              // Return the cached response if it exists
-              if (response) {
-                return response;
-              }
-      
-              // Otherwise, fetch the request from the network
-              return fetch(event.request);
-            })
-        );
-      });
+  });
+}
     </script>
 <!-- Mirrored from templates.envytheme.com/oban/default/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jul 2023 21:20:24 GMT -->
 </html>
